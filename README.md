@@ -2,7 +2,7 @@
 
 Improve-UDP
 
-Improve the quality of P2P transmission, UDP protocol transmission speed and reliability of TCP protocol, that is, in the UDP protocol to add to receive data validation, receiving data inspection and sorting of receiving data, the flow of control and other essential elements, in the case of UDP protocol should have speed, greatly improve the transmission reliability of UDP protocol.
+  Improve the quality of P2P transmission, UDP protocol transmission speed and reliability of TCP protocol, that is, in the UDP protocol to add to receive data validation, receiving data inspection and sorting of receiving data, the flow of control and other essential elements, in the case of UDP protocol should have speed, greatly improve the transmission reliability of UDP protocol.
 
 API Function
 
