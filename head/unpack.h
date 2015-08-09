@@ -24,11 +24,12 @@ enum Data_type {
     PT_Lastack,
     PT_Finish,
     PT_Data,
-    PT_Empty,
-    PT_Reset    
+    PT_Empty,         
+    PT_Reset          
 };
 
-//single udp package context headler infomation.
+/* single udp package context headler infomation. */
+
 struct pack_head {
     uint32_t    pack_total;             /*  package total counts  */
     uint32_t    pack_type;              /*  package type          */
@@ -62,5 +63,10 @@ struct sliding_win {
     int win_end;        /*发送分组终止端*/
     int step_add;       /*窗口增量*/
 };
+
+void delete(_pack *result, int cnt);
+void static packet(uint32_t  totle, uint32_t type, int send_size, 
+                 uint32_t serial, int size_n, const char *buf, _pack *res);
+void *split_pack(const char *buf, size_t size_n, int *cnt);
 
 #endif // end _unpack_h_

@@ -55,4 +55,10 @@ struct recv_ctl {
     int    sureNO[BUF_MAX_CNT];
 };
 
+int init_ctl(struct recv_ctl *ctl, _Argument *arg);
+bool check_Allpack(int *no, struct Ack* ack, int totle);
+bool anwser_ack(struct Ack *ack, const struct pack_head *pack, 
+                            int index, int able_buf, int *no, int *totle);
+void getmsg_info(const struct pack_head *pack, char *buf, int *no);
+
 #endif //end _recv_h_
